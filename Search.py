@@ -185,7 +185,6 @@ class hibrid(Searcher):
                     if word in wordvalue.keys():
                         check_cat[cats[i]] += wordvalue[word]
         cat = max(check_cat.items(), key=lambda x: x[1])
-        print(cat)
         return cat[0]
     
     def get_difficulty_score(self, query):
